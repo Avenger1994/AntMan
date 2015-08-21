@@ -1,0 +1,35 @@
+itemGroup.tabAntMan=Ant-Man
+
+antman.keybinding.changesize=Change Size
+antman.keybinding.togglehelmet=Toggle Helmet
+antman.keybinding.togglehud=Toggle HUD
+antman.keybinding.togglespeed=Toggle Speed
+antman.keybinding.shootrepulsor=Shoot Yellowjacket Repulsor
+
+item.antman.helmet.name=Ant-Man Helmet
+item.antman.chestplate.name=Ant-Man Chestplate
+item.antman.creativeChestplate.name=Creative Ant-Man Chestplate
+item.antman.legs.name=Ant-Man Legs
+item.antman.boots.name=Ant-Man Boots
+
+item.antman.yjHelmet.name=Yellowjacket Helmet
+item.antman.yjChestplate.name=Yellowjacket Chestplate
+item.antman.yjCreativeChestplate.name=Creative Yellowjacket Chestplate
+item.antman.yjLegs.name=Yellowjacket Legs
+item.antman.yjBoots.name=Yellowjacket Boots
+
+item.antman.tank.name=Pym-Particle Tank
+item.antman.filter.name=Filter
+item.antman.antAntenna.name=Ant Antenna
+item.antman.yjArmorPlating.name=Yellowjacket Armor Plating
+item.antman.yjLaserArm.name=Yellowjacket Laser Arm
+
+tile.pymParticleProducer.name=Pym-Particles Producer
+tile.pymWorkbench.name=Pym Workbench
+fluid.pymParticles=Pym-Partikel
+
+antman.info.energy=Energy
+antman.info.pymparticles=Pym-Particles
+antman.info.infinite=Infinite
+
+death.attack.suffocate=%1$s suffocates

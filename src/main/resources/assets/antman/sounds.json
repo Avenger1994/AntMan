@@ -1,0 +1,4 @@
+{
+   "toggle_change": {"category": "master","sounds": [{"name": "toggle_change","stream": false}]},
+   "toggle_normal": {"category": "master","sounds": [{"name": "toggle_normal","stream": false}]}
+}

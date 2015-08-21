@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "AntMan",
+  "name": "AntMan",
+  "description": "Become the AntMan!",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["TheCrafterL"],
+  "credits": "The Forge and FML guys, Marvel and Hank Pym.",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
