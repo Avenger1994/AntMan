@@ -66,6 +66,8 @@ public class ClientRenderer {
 			tickRendererHUD();
 	}
 
+	// Credits: coolAlias
+	
 	private void updateRenderer() {
 		if (AntMan.isSmall(mc.thePlayer)) {
 			if (renderer == null) {

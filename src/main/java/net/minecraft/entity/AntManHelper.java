@@ -12,6 +12,8 @@ public class AntManHelper {
 	public static final float defaultHeight = 1.8F;
 	public static final float eyeHeightMultiplier = 0.85F;
 	
+	// Credits: coolAlias
+	
 	public static void setSize(EntityLivingBase entity, AntManSizes size) {
 		entity.setSize(defaultWidth * size.getMultiplier(), defaultHeight * size.getMultiplier());
 		entity.getEntityData().setFloat("smallWidth", entity.width);
