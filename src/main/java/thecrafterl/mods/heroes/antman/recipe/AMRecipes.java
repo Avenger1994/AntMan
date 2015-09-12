@@ -33,8 +33,10 @@ public class AMRecipes {
 			
 			if(AMConfig.recipesFilter) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.filter), new Object[] {"IGI", "GRG", "IGI", 'I', Items.iron_ingot, 'G', Blocks.iron_bars, 'R', Items.redstone}));
 			if(AMConfig.recipesAntAntenna) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.antAntenna), new Object[] {"  I", " I ", "R  ", 'I', "ingotIron", 'R', "dustRedstone"}));
-			if(AMConfig.recipesYJArmorPlating) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjArmorPlating), new Object[] {"III", "WGW", "III", 'I', "ingotIron", 'G', "ingotGold", 'W', new ItemStack(Blocks.wool, 1, 15)}));
+			if(AMConfig.recipesYJArmorPlating) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjArmorPlating, 2), new Object[] {"III", "WGW", "III", 'I', "ingotIron", 'G', "ingotGold", 'W', new ItemStack(Blocks.wool, 1, 15)}));
 			if(AMConfig.recipesYJLaserArm) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjLaserArm), new Object[] {"R ", " P", "P ", 'P', AMItems.yjArmorPlating, 'R', "blockRedstone"}));
+			if(AMConfig.recipesWaspArmorPlating) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.waspArmorPlating, 4), new Object[] {"III", "RBY", "III", 'I', "ingotIron", 'R', "dyeRed", 'B', "dyeBlack", 'Y', "dyeYellow"}));
+			if(AMConfig.recipesWaspWing) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.waspWing), new Object[] {" IG", "IGG", "IGF", 'I', "ingotIron", 'G', "paneGlassLightBlue", 'F', Items.feather}));
 			
 			if(AMConfig.recipesPymParticleProducer) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMBlocks.pymParticleProducer), new Object[] {"CIC", "2R1", "CCC", 'I', Items.iron_ingot, 'C', Blocks.cobblestone, '1', AMItems.tank1, '2', AMItems.tank2, 'R', Items.redstone}));
 			
@@ -47,6 +49,11 @@ public class AMRecipes {
 			if(AMConfig.recipesYJChestplate) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjChestplate), new Object[] {"A A", "PTP", "PBP", 'T', AMItems.tank1, 'B', "blockIron", 'A', AMItems.yjLaserArm, 'P', AMItems.yjArmorPlating}));
 			if(AMConfig.recipesYJLegs) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjLegs), new Object[] {"BPB", "P P", "I I", 'I', "ingotIron", 'B', "blockIron", 'P', AMItems.yjArmorPlating}));
 			if(AMConfig.recipesYJBoots) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjBoots), new Object[] {"I I", "P P", 'I', "ingotIron", 'P', AMItems.yjArmorPlating}));
+			
+			if(AMConfig.recipesMCUWaspHelmet) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.mcuWaspHelmet), new Object[] {"III", "GIG", " F ", 'I', "ingotIron", 'G', "paneGlassYellow", 'F', AMItems.filter}));
+			if(AMConfig.recipesMCUWaspChestplate) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.mcuWaspChestplate), new Object[] {"W W", "PTP", "IPI", 'T', AMItems.tank1, 'W', AMItems.waspWing, 'P', AMItems.waspArmorPlating, 'I', "ingotIron"}));
+			if(AMConfig.recipesMCUWaspLegs) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.mcuWaspLegs), new Object[] {"IPI", "P P", "I I", 'I', "ingotIron", 'P', AMItems.waspArmorPlating}));
+			if(AMConfig.recipesMCUWaspBoots) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.mcuWaspBoots), new Object[] {"P P", "I I", 'I', "ingotIron", 'P', AMItems.waspArmorPlating}));
 		}
 		
 		//----------------
@@ -60,8 +67,10 @@ public class AMRecipes {
 		
 			if(AMConfig.recipesFilter) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.filter), new Object[] {"IGI", "GRG", "IGI", 'I', "ingotInvar", 'G', Blocks.iron_bars, 'R', Items.redstone}));
 			if(AMConfig.recipesAntAntenna) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.antAntenna), new Object[] {"  I", " I ", "R  ", 'I', "ingotInvar", 'R', "dustRedstone"}));
-			if(AMConfig.recipesYJArmorPlating) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjArmorPlating), new Object[] {"III", "WGW", "III", 'I', "ingotInvar", 'G', "ingotGold", 'W', new ItemStack(Blocks.wool, 1, 15)}));
+			if(AMConfig.recipesYJArmorPlating) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjArmorPlating, 2), new Object[] {"III", "WGW", "III", 'I', "ingotInvar", 'G', "ingotGold", 'W', new ItemStack(Blocks.wool, 1, 15)}));
 			if(AMConfig.recipesYJLaserArm) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjLaserArm), new Object[] {"R ", " P", "P ", 'P', AMItems.yjArmorPlating, 'R', capacitorBasic}));
+			if(AMConfig.recipesWaspArmorPlating) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.waspArmorPlating, 4), new Object[] {"III", "RBY", "III", 'I', "ingotInvar", 'R', "dyeRed", 'B', "dyeBlack", 'Y', "dyeYellow"}));
+			if(AMConfig.recipesWaspWing) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.waspWing), new Object[] {" IG", "IGG", "IGF", 'I', "ingotInvar", 'G', "paneGlassLightBlue", 'F', Items.feather}));
 			
 			if(AMConfig.recipesPymParticleProducer) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMBlocks.pymParticleProducer), new Object[] {"CIC", "2R1", "CCC", 'I', "ingotInvar", 'C', Blocks.cobblestone, '1', AMItems.tank1, '2', AMItems.tank2, 'R', Items.redstone}));
 		
@@ -74,6 +83,11 @@ public class AMRecipes {
 			if(AMConfig.recipesYJChestplate) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjChestplate), new Object[] {"ACA", "PTP", "PBP", 'T', AMItems.tank1, 'B', "blockInvar", 'A', AMItems.yjLaserArm, 'P', AMItems.yjArmorPlating, 'C', capacitorBasic}));
 			if(AMConfig.recipesYJLegs) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjLegs), new Object[] {"BPB", "P P", "I I", 'I', "ingotInvar", 'B', "blockInvar", 'P', AMItems.yjArmorPlating}));
 			if(AMConfig.recipesYJBoots) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjBoots), new Object[] {"I I", "P P", 'I', "ingotInvar", 'P', AMItems.yjArmorPlating}));
+			
+			if(AMConfig.recipesMCUWaspHelmet) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.mcuWaspHelmet), new Object[] {"III", "GIG", " F ", 'I', "ingotInvar", 'G', "paneGlassYellow", 'F', AMItems.filter}));
+			if(AMConfig.recipesMCUWaspChestplate) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.mcuWaspChestplate), new Object[] {"WCW", "PTP", "IPI", 'T', AMItems.tank1, 'W', AMItems.waspWing, 'P', AMItems.waspArmorPlating, 'I', "ingotInvar", 'C', capacitorBasic}));
+			if(AMConfig.recipesMCUWaspLegs) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.mcuWaspLegs), new Object[] {"IPI", "P P", "I I", 'I', "ingotInvar", 'P', AMItems.waspArmorPlating}));
+			if(AMConfig.recipesMCUWaspBoots) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.mcuWaspBoots), new Object[] {"P P", "I I", 'I', "ingotInvar", 'P', AMItems.waspArmorPlating}));
 		}
 		
 		//----------------
@@ -87,8 +101,10 @@ public class AMRecipes {
 		
 			if(AMConfig.recipesFilter) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.filter), new Object[] {"IGI", "GRG", "IGI", 'I', "ingotElectricalSteel", 'G', Blocks.iron_bars, 'R', Items.redstone}));
 			if(AMConfig.recipesAntAntenna) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.antAntenna), new Object[] {"  I", " I ", "R  ", 'I', "ingotElectricalSteel", 'R', "dustRedstone"}));
-			if(AMConfig.recipesYJArmorPlating) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjArmorPlating), new Object[] {"III", "WGW", "III", 'I', "ingotElectricalSteel", 'G', "ingotGold", 'W', new ItemStack(Blocks.wool, 1, 15)}));
+			if(AMConfig.recipesYJArmorPlating) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjArmorPlating, 2), new Object[] {"III", "WGW", "III", 'I', "ingotElectricalSteel", 'G', "ingotGold", 'W', new ItemStack(Blocks.wool, 1, 15)}));
 			if(AMConfig.recipesYJLaserArm) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjLaserArm), new Object[] {"R ", " P", "P ", 'P', AMItems.yjArmorPlating, 'R', capacitor}));
+			if(AMConfig.recipesWaspArmorPlating) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.waspArmorPlating, 4), new Object[] {"III", "RBY", "III", 'I', "ingotElectricalSteel", 'R', "dyeRed", 'B', "dyeBlack", 'Y', "dyeYellow"}));
+			if(AMConfig.recipesWaspWing) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.waspWing), new Object[] {" IG", "IGG", "IGF", 'I', "ingotElectricalSteel", 'G', "paneGlassLightBlue", 'F', Items.feather}));
 			
 			if(AMConfig.recipesPymParticleProducer) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMBlocks.pymParticleProducer), new Object[] {"CIC", "2R1", "CCC", 'I', "ingotElectricalSteel", 'C', Blocks.cobblestone, '1', AMItems.tank1, '2', AMItems.tank2, 'R', Items.redstone}));
 		
@@ -101,6 +117,11 @@ public class AMRecipes {
 			if(AMConfig.recipesYJChestplate) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjChestplate), new Object[] {"ACA", "PTP", "PBP", 'T', AMItems.tank1, 'B', "blockElectricalSteel", 'A', AMItems.yjLaserArm, 'P', AMItems.yjArmorPlating, 'C', capacitor}));
 			if(AMConfig.recipesYJLegs) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjLegs), new Object[] {"BPB", "P P", "I I", 'I', "ingotElectricalSteel", 'B', "blockElectricalSteel", 'P', AMItems.yjArmorPlating}));
 			if(AMConfig.recipesYJBoots) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.yjBoots), new Object[] {"I I", "P P", 'I', "ingotElectricalSteel", 'P', AMItems.yjArmorPlating}));
+		
+			if(AMConfig.recipesMCUWaspHelmet) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.mcuWaspHelmet), new Object[] {"III", "GIG", " F ", 'I', "ingotElectricalSteel", 'G', "paneGlassYellow", 'F', AMItems.filter}));
+			if(AMConfig.recipesMCUWaspChestplate) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.mcuWaspChestplate), new Object[] {"WCW", "PTP", "IPI", 'T', AMItems.tank1, 'W', AMItems.waspWing, 'P', AMItems.waspArmorPlating, 'I', "ingotElectricalSteel", 'C', capacitor}));
+			if(AMConfig.recipesMCUWaspLegs) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.mcuWaspLegs), new Object[] {"IPI", "P P", "I I", 'I', "ingotElectricalSteel", 'P', AMItems.waspArmorPlating}));
+			if(AMConfig.recipesMCUWaspBoots) PymWorkbenchCraftingManager.recipes.add(new ShapedOreRecipe(new ItemStack(AMItems.mcuWaspBoots), new Object[] {"P P", "I I", 'I', "ingotElectricalSteel", 'P', AMItems.waspArmorPlating}));
 		}
 		
 		//----------------

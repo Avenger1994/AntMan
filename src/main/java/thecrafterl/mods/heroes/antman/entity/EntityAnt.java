@@ -53,14 +53,14 @@ public class EntityAnt extends EntityTameable {
 	public boolean interact(EntityPlayer player) {
 		if (super.interact(player)) {
 			return true;
-		} else if(!isTamed() && AntMan.hasArmorOn(player, ShrinkerTypes.ANTMAN) && AntMan.isSmall(player)) {
+		} else if(!isTamed() && AntMan.hasArmorOn(player, ShrinkerTypes.MCU_ANTMAN) && AntMan.isSmall(player)) {
 			setTamed(true);
 			this.func_152115_b(player.getUniqueID().toString());
 			return true;
 		} else if(this.func_152114_e(player) && !this.worldObj.isRemote && player.isSneaking()) {
 			this.setSitting(!isSitting());
 			return true;
-		} else if(canRide && this.func_152114_e(player) && !this.worldObj.isRemote && AntMan.hasArmorOn(player, ShrinkerTypes.ANTMAN) && AntMan.isSmall(player)) {
+		} else if(canRide && this.func_152114_e(player) && !this.worldObj.isRemote && AntMan.hasArmorOn(player, ShrinkerTypes.MCU_ANTMAN) && AntMan.isSmall(player)) {
 			setRidingPlayer(player);
 			return true;
 		}
@@ -68,7 +68,7 @@ public class EntityAnt extends EntityTameable {
 	}
 	
 	public double getMountedYOffset() {
-		return 0.535D;
+		return 0.45D;
 	}
 	
 	@Override

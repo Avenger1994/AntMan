@@ -40,6 +40,7 @@ public class ItemAntManArmorChestplate extends ItemAntManArmor implements IPymPa
 	
 	@Override
 	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean b) {
+		super.addInformation(stack, player, list, b);
 		setDefaultTags(stack);
 		list.add(ChatFormatting.GRAY + StatCollector.translateToLocal("antman.info.pymparticles") + ChatFormatting.DARK_GRAY + ":");
 		list.add("   " + ShrinkerTypesHandlerClient.getChatColor(getShrinkerType()) + PymParticleHandler.getPymParticles(stack) + ChatFormatting.DARK_GRAY + "/" + ShrinkerTypesHandlerClient.getChatColor(getShrinkerType()) + PymParticleHandler.getMaxPymParticles(stack));

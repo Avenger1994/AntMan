@@ -18,11 +18,19 @@ item.antman.yjCreativeChestplate.name=Creative Yellowjacket Chestplate
 item.antman.yjLegs.name=Yellowjacket Legs
 item.antman.yjBoots.name=Yellowjacket Boots
 
+item.antman.mcuWaspHelmet.name=Wasp Helmet
+item.antman.mcuWaspChestplate.name=Wasp Chestplate
+item.antman.mcuWaspCreativeChestplate.name=Creative Wasp Chestplate
+item.antman.mcuWaspLegs.name=Wasp Legs
+item.antman.mcuWaspBoots.name=Wasp Boots
+
 item.antman.tank.name=Pym-Particle Tank
 item.antman.filter.name=Filter
 item.antman.antAntenna.name=Ant Antenna
 item.antman.yjArmorPlating.name=Yellowjacket Armor Plating
 item.antman.yjLaserArm.name=Yellowjacket Laser Arm
+item.antman.waspArmorPlating.name=Wasp Armor Plating
+item.antman.waspWing.name=Wasp Wing
 
 tile.pymParticleProducer.name=Pym-Particles Producer
 tile.pymWorkbench.name=Pym Workbench

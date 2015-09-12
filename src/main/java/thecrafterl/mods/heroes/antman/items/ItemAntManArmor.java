@@ -1,5 +1,7 @@
 package thecrafterl.mods.heroes.antman.items;
 
+import java.util.List;
+
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.entity.AntManHelper;
 import net.minecraft.entity.Entity;
@@ -24,7 +26,7 @@ public class ItemAntManArmor extends ItemArmor {
 	private ShrinkerTypes type;
 	
 	public ItemAntManArmor(String name, int i, ShrinkerTypes type) {
-		super(ArmorMaterial.IRON, 0, i);
+		super(type.getArmorMaterial(), 0, i);
 		
 		this.setUnlocalizedName(AntMan.MODID.toLowerCase() + "." + name);
 		this.setTextureName(AntMan.ASSETDIR + name);
@@ -35,6 +37,12 @@ public class ItemAntManArmor extends ItemArmor {
 		this.type = type;
 		
 		AMItems.items.add(this);
+	}
+	
+	@Override
+	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean b) {
+		super.addInformation(stack, player, list, b);
+		list.add(this.getShrinkerType().getDescription() + " Version");
 	}
 	
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
@@ -51,7 +59,7 @@ public class ItemAntManArmor extends ItemArmor {
 	public ModelBiped getArmorModel(EntityLivingBase entityLiving, ItemStack itemStack, int armorSlot) {
 		ModelBiped armorModel = null;
 		if (itemStack != null) {
-			armorModel = ShrinkerTypesHandlerClient.getModel(getShrinkerType());
+			armorModel = ShrinkerTypesHandlerClient.getChestplateModel(getShrinkerType());
 			if (armorModel != null) {
 				armorModel.bipedHead.showModel = armorSlot == 0;
 				armorModel.bipedHeadwear.showModel = armorSlot == 0;

@@ -37,7 +37,7 @@ public class MessageYJShoot implements IMessage, IMessageHandler<MessageYJShoot,
         EntityPlayer player = getPlayerEntity(ctx);
         
         if (player != null) {
-    		if(AntMan.hasArmorOn(player, ShrinkerTypes.YELLOWJACKET)) {
+    		if(AntMan.hasArmorOn(player, ShrinkerTypes.MCU_YELLOWJACKET)) {
     			AntMan.shootLaser(player);
     		}
         }

@@ -106,7 +106,7 @@ public class ClientKeyHandler {
 						AMConfig.showHUD = !AMConfig.showHUD;
 					if(speed && AntMan.isSmall(mc.thePlayer))
 						AntMan.network.sendToServer(new MessageToggleSpeed());
-					if(repulsor && AntMan.hasArmorOn(mc.thePlayer, ShrinkerTypes.YELLOWJACKET))
+					if(repulsor && AntMan.hasArmorOn(mc.thePlayer, ShrinkerTypes.MCU_YELLOWJACKET))
 						AntMan.network.sendToServer(new MessageYJShoot());
 			}
 		}

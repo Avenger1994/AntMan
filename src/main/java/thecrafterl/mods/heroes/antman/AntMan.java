@@ -55,7 +55,7 @@ public class AntMan {
 	
 	public static final String MODID = "AntMan";
 	public static final String NAME = "AntMan";
-	public static final String VERSION = "Beta-1.7.10-1.3.3";
+	public static final String VERSION = "Beta-1.7.10-1.4.0";
 	public static final String ASSETDIR = MODID + ":";
 
 	
@@ -170,7 +170,7 @@ public class AntMan {
 				break;
 			case NORMAL:
 				AntManPlayerData.get(player).setSize(AntManSizes.SMALL);
-				player.worldObj.playSoundAtEntity(player, ASSETDIR + "toggle_change", 1.0F, 1.0F);
+				player.worldObj.playSoundAtEntity(player, ASSETDIR + "toggle_small", 1.0F, 1.0F);
 				setHelmetOpen(player, false);
 //				player.setPositionAndUpdate(player.posX - 0.27D, player.posY, player.posZ - 0.73D);
 			default:
@@ -193,11 +193,21 @@ public class AntMan {
 		return !stack.stackTagCompound.getBoolean("helmetOpen");
 	}
 	
+	public static ShrinkerTypes getShrinkerTypeFromHelmet(EntityPlayer player) {
+		ItemStack helmet = player.getCurrentArmor(3);
+		
+		if(helmet != null && helmet.getItem() instanceof ItemAntManArmor) {
+			return ((ItemAntManArmor)helmet.getItem()).getShrinkerType();
+		}
+		
+		return null;
+	}
+	
 	public static void setHelmetOpen(EntityPlayer player, boolean b) {
 		ItemStack stack = player.getCurrentArmor(3);
 		setDefaultHelmetTags(stack);
 		if(b != stack.stackTagCompound.getBoolean("helmetOpen"))
-			player.worldObj.playSoundAtEntity(player, "random.anvil_land", 1.0F, 1.0F);
+			player.worldObj.playSoundAtEntity(player, getShrinkerTypeFromHelmet(player).getHelmetSound(), 1.0F, 1.0F);
 		stack.stackTagCompound.setBoolean("helmetOpen", b);
 	}
 	
@@ -232,7 +242,7 @@ public class AntMan {
 	}
 	
 	public static void shootLaser(EntityPlayer player) {
-		if(hasArmorOn(player, ShrinkerTypes.YELLOWJACKET)) {
+		if(hasArmorOn(player, ShrinkerTypes.MCU_YELLOWJACKET)) {
 			ItemAntManArmorChestplate chestplate = (ItemAntManArmorChestplate) player.getCurrentArmor(2).getItem();
 			
 			if(chestplate.hasEnoughEnergy(player.getCurrentArmor(2), 160)) {

@@ -29,6 +29,7 @@ public class ItemAntManArmorChestplateCreative extends ItemAntManArmorChestplate
 	
 	@Override
 	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean b) {
+		super.addInformation(stack, player, list, b);
 		setDefaultTags(stack);
 		list.add(ChatFormatting.GRAY + StatCollector.translateToLocal("antman.info.pymparticles") + ChatFormatting.DARK_GRAY + ":");
 		list.add("   " + ShrinkerTypesHandlerClient.getChatColor(getShrinkerType()) + StatCollector.translateToLocal("antman.info.infinite"));

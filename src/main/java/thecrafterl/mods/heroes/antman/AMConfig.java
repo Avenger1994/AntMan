@@ -42,6 +42,11 @@ public class AMConfig {
 	public static boolean recipesYJLegs;
 	public static boolean recipesYJBoots;
 	
+	public static boolean recipesMCUWaspHelmet;
+	public static boolean recipesMCUWaspChestplate;
+	public static boolean recipesMCUWaspLegs;
+	public static boolean recipesMCUWaspBoots;
+	
 	public static boolean recipesTank1;
 	public static boolean recipesTank2;
 	public static boolean recipesTank3;
@@ -50,6 +55,8 @@ public class AMConfig {
 	public static boolean recipesPymParticleProducer;
 	public static boolean recipesYJArmorPlating;
 	public static boolean recipesYJLaserArm;
+	public static boolean recipesWaspArmorPlating;
+	public static boolean recipesWaspWing;
 	
 	public static void init(FMLPreInitializationEvent event) {
 		Configuration config = new Configuration(event.getSuggestedConfigurationFile());
@@ -85,6 +92,11 @@ public class AMConfig {
 		recipesYJLegs = config.get("Recipes", "Yellowjacket Legs", true).getBoolean();
 		recipesYJBoots = config.get("Recipes", "Yellowjacket Boots", true).getBoolean();
 		
+		recipesMCUWaspHelmet = config.get("Recipes", "MCU Wasp Helmet", true).getBoolean();
+		recipesMCUWaspChestplate = config.get("Recipes", "MCU Wasp Chestplate", true).getBoolean();
+		recipesMCUWaspLegs = config.get("Recipes", "MCU Wasp Legs", true).getBoolean();
+		recipesMCUWaspBoots = config.get("Recipes", "MCU Wasp Boots", true).getBoolean();
+		
 		recipesTank1 = config.get("Recipes", "Tank Tier 1", true).getBoolean();
 		recipesTank2 = config.get("Recipes", "Tank Tier 2", true).getBoolean();
 		recipesTank3 = config.get("Recipes", "Tank Tier 3", true).getBoolean();
@@ -93,6 +105,8 @@ public class AMConfig {
 		recipesPymParticleProducer = config.get("Recipes", "Pym-Particle Producer", true).getBoolean();
 		recipesYJArmorPlating = config.get("Recipes", "Yellowjacket Armor Plating", true).getBoolean();
 		recipesYJLaserArm = config.get("Recipes", "Yellowjacket Laser Arm", true).getBoolean();
+		recipesWaspArmorPlating = config.get("Recipes", "Wasp Armor Plating", true).getBoolean();
+		recipesWaspWing = config.get("Recipes", "Wasp Wing", true).getBoolean();
 		
 		config.save();
 	}
